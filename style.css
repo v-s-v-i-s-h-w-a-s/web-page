@@ -246,6 +246,34 @@ section {
     display: inline-block;
 }
 
+.about-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Responsive for smaller screens */
+}
+
+.about-text {
+    flex: 1 1 350px;
+    min-width: 250px;
+}
+
+.about-image {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
 /* Skills Section */
 .skills {
     background: var(--bg-light);
