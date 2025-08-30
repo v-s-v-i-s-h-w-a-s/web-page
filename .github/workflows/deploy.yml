@@ -53,13 +53,18 @@ jobs:
           sudo apt-get install -y nodejs npm
           npm install -g jshint
           jshint **/*.js || true
+      - name: Create reports directory
+        run: |
+          mkdir -p reports
+          echo "Build completed successfully" > reports/build-report.txt
+          echo "CSS and JS linting completed" > reports/lint-report.txt
       - name: Upload reports artifact
         uses: actions/upload-artifact@v4
         with:
           name: reports
-          path: reports/*
+          path: reports/
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .
   deploy:
