@@ -1,4 +1,4 @@
-# Student Portfolio Template
+# Student Portfolio Template Wazzuuupp!!!!
 
 A **complete GitHub repository** for creating a professional student resume/portfolio website. Designed for learning **Git basics**, **GitHub-Jira integration**, and **GitHub Actions CI/CD pipeline**.
 
